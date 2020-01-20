@@ -11,13 +11,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{C7ED723D-8E1
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{0709ADDE-B715-41E4-8FA3-910FCA24EAAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseArchitecture.Shared", "Core\BaseArchitecture.Shared\BaseArchitecture.Shared.csproj", "{0572CB0E-3B7D-496D-9F9C-0C3C1FF75980}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseArchitecture.Shared", "Core\BaseArchitecture.Shared\BaseArchitecture.Shared.csproj", "{0572CB0E-3B7D-496D-9F9C-0C3C1FF75980}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseArchitecture.Domain", "Core\BaseArchitecture.Domain\BaseArchitecture.Domain.csproj", "{996DD3CD-686A-4918-84B9-383BC2F3039F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseArchitecture.Domain", "Core\BaseArchitecture.Domain\BaseArchitecture.Domain.csproj", "{996DD3CD-686A-4918-84B9-383BC2F3039F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseArchitecture.Application", "Core\BaseArchitecture.Application\BaseArchitecture.Application.csproj", "{D632DDF3-0A51-4654-BF85-028F2D272E2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseArchitecture.Application", "Core\BaseArchitecture.Application\BaseArchitecture.Application.csproj", "{D632DDF3-0A51-4654-BF85-028F2D272E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseArchitecture.Infrastructure", "Infrastructure\BaseArchitecture.Infrastructure\BaseArchitecture.Infrastructure.csproj", "{04A64DBD-E03B-43C0-B197-0BFCF1A0C1AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseArchitecture.Infrastructure", "Infrastructure\BaseArchitecture.Infrastructure\BaseArchitecture.Infrastructure.csproj", "{04A64DBD-E03B-43C0-B197-0BFCF1A0C1AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution", ".Solution", "{AF0F14E7-3A65-47E4-8DD0-734CB643546F}"
+	ProjectSection(SolutionItems) = preProject
+		.Solution\Changelog.md = .Solution\Changelog.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

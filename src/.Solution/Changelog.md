@@ -12,3 +12,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - New project BaseArchitecture.Application for the applications features / use cases
 - New project BaseArchitecture.Infrastructure for infrastructure related implementations
 - Added this changelog file
+- New project BaseArchitecture.Tests for unit tests

@@ -1,4 +1,5 @@
 using BaseArchitecture.Domain.Entities;
+using BaseArchitecture.Infrastructure;
 using BaseArchitecture.Infrastructure.Data.EntityFramework;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -19,7 +20,6 @@ namespace BaseArchitecture.App.Web.MVC
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options =>
@@ -32,9 +32,10 @@ namespace BaseArchitecture.App.Web.MVC
             
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddInfrastructureServices();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

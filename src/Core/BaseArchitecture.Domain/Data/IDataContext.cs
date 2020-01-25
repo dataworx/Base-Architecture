@@ -1,6 +1,7 @@
 ﻿using BaseArchitecture.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace BaseArchitecture.Domain.Data
 {
@@ -19,5 +20,9 @@ namespace BaseArchitecture.Domain.Data
         DbSet<IdentityRole> Roles { get; set; }
 
         DbSet<IdentityRoleClaim<string>> RoleClaims { get; set; }
+
+        int SaveChanges();
+        
+        Task<int> SaveChangesAsync();
     }
 }

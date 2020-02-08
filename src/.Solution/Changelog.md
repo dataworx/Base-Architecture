@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Renamed project to Baseline
+
 ### Added
 - New project BaseArchitecture.Shared for shared utils, extensions, etc.
 - New project BaseArchitecture.Domain for core business logic

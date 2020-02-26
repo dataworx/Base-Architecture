@@ -1,10 +1,10 @@
-﻿using System.Diagnostics;
-using System.Threading.Tasks;
-using Baseline.App.Web.MVC.Models;
+﻿using Baseline.App.Web.MVC.Models;
 using Baseline.Domain.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace Baseline.App.Web.MVC.Controllers
 {
@@ -19,7 +19,7 @@ namespace Baseline.App.Web.MVC.Controllers
             this.dataContext = dataContext;
         }
 
-        public IActionResult Index()
+        public IActionResult Index([FromQuery] string name)
         {
             return View();
         }

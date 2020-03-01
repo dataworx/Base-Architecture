@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
-using Baseline.Domain.Entities;
+﻿using Baseline.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace Baseline.Domain.Data
 {
@@ -20,6 +20,8 @@ namespace Baseline.Domain.Data
         DbSet<IdentityRole> Roles { get; set; }
 
         DbSet<IdentityRoleClaim<string>> RoleClaims { get; set; }
+
+        DbSet<LogEntry> LogEntries { get; set; }
 
         int SaveChanges();
         

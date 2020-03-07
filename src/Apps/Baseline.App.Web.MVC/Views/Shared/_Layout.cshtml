@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Baseline.App.Web.MVC</title>
+
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="~/lib/overlayscrollbars/css/OverlayScrollbars.min.css">
+    <link rel="stylesheet" href="~/lib/admin-lte/css/adminlte.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
 <body>
     @*<a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Baseline.App.Web.MVC</a>
@@ -11,8 +17,14 @@
         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>*@
     @RenderBody()
 
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/overlayscrollbars/js/OverlayScrollbars.min.js"></script>
+    <script src="~/lib/admin-lte/js/adminlte.js"></script>
 
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery-mousewheel/js/jquery.mousewheel.min.js"></script>
+    <script src="~/lib/raphael/js/raphael.min.js"></script>
+
     @RenderSection("Scripts", required: false)
 </body>
 </html>

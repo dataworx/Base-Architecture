@@ -1,38 +1,14 @@
 ﻿using Baseline.App.Web.MVC.Models;
-using Baseline.Domain.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using System.Diagnostics;
-using System.Threading.Tasks;
 
 namespace Baseline.App.Web.MVC.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        private readonly IDataContext dataContext;
-
-        public HomeController(ILogger<HomeController> logger, IDataContext dataContext)
-        {
-            _logger = logger;
-            this.dataContext = dataContext;
-        }
-
         public IActionResult Index([FromQuery] string name)
-        {
-            return View();
-        }
-
-        public async Task<IActionResult> GetUsers()
-        {
-            var users = await this.dataContext.Users.ToListAsync();
-            return Json(users);
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }

@@ -1,5 +1,6 @@
 ﻿using Baseline.App.Web.MVC.Models;
 using Baseline.Domain.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -8,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace Baseline.App.Web.MVC.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

@@ -18,6 +18,14 @@ namespace Baseline.Infrastructure.Data.EntityFramework.Configurations
             builder.Property(t => t.Level)
                 .HasMaxLength(50)
                 .IsRequired();
+
+            builder.Property(t => t.ApplicationName)
+                .HasMaxLength(100)
+                .IsRequired();
+
+            builder.Property(t => t.MachineName)
+                .HasMaxLength(100)
+                .IsRequired();
         }
     }
 }

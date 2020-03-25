@@ -14,6 +14,10 @@ namespace Baseline.Domain.Entities
 
         public DateTime TimeStamp { get; set; }
 
+        public string ApplicationName { get; set; }
+
+        public string MachineName { get; set; }
+
         public string Exception { get; set; }
 
         public string LogEvent { get; set; }    

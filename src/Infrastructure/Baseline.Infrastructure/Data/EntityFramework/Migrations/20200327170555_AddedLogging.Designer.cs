@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Baseline.Infrastructure.Data.EntityFramework.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20200325223200_AddLoggingTable")]
-    partial class AddLoggingTable
+    [Migration("20200327170555_AddedLogging")]
+    partial class AddedLogging
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -123,8 +123,8 @@ namespace Baseline.Infrastructure.Data.EntityFramework.Migrations
                         .HasColumnType("nvarchar(500)")
                         .HasMaxLength(500);
 
-                    b.Property<DateTime>("TimeStamp")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTimeOffset>("TimeStamp")
+                        .HasColumnType("datetimeoffset");
 
                     b.HasKey("Id");
 

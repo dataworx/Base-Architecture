@@ -51,6 +51,7 @@ namespace Baseline.App.Web.MVC.Configuration
             string connectionStringName, IConfiguration configuration)
         {
             var columnOptions = new ColumnOptions();
+            columnOptions.TimeStamp.DataType = SqlDbType.DateTimeOffset;
             columnOptions.Store.Remove(StandardColumn.Properties);
             columnOptions.Store.Add(StandardColumn.LogEvent);
             columnOptions.AdditionalColumns = new Collection<SqlColumn>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Baseline.Infrastructure.Data.EntityFramework.Migrations
 {
-    public partial class AddLoggingTable : Migration
+    public partial class AddedLogging : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -16,7 +16,7 @@ namespace Baseline.Infrastructure.Data.EntityFramework.Migrations
                     Message = table.Column<string>(nullable: false),
                     MessageTemplate = table.Column<string>(maxLength: 500, nullable: false),
                     Level = table.Column<string>(maxLength: 50, nullable: false),
-                    TimeStamp = table.Column<DateTime>(nullable: false),
+                    TimeStamp = table.Column<DateTimeOffset>(nullable: false),
                     ApplicationName = table.Column<string>(maxLength: 100, nullable: false),
                     MachineName = table.Column<string>(maxLength: 100, nullable: false),
                     Exception = table.Column<string>(nullable: true),

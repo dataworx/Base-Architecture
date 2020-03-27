@@ -121,8 +121,8 @@ namespace Baseline.Infrastructure.Data.EntityFramework.Migrations
                         .HasColumnType("nvarchar(500)")
                         .HasMaxLength(500);
 
-                    b.Property<DateTime>("TimeStamp")
-                        .HasColumnType("datetime2");
+                    b.Property<DateTimeOffset>("TimeStamp")
+                        .HasColumnType("datetimeoffset");
 
                     b.HasKey("Id");
 

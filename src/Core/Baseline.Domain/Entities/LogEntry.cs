@@ -12,7 +12,7 @@ namespace Baseline.Domain.Entities
 
         public string Level { get; set; }
 
-        public DateTime TimeStamp { get; set; }
+        public DateTimeOffset TimeStamp { get; set; }
 
         public string ApplicationName { get; set; }
 
